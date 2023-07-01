@@ -1,0 +1,21 @@
+class Vehicle:
+    def __init__(self, modal, color, variant, exprise):
+        self.modal = modal
+        self.color = color
+        self.variant = variant
+        self.exprise = exprise
+
+    def exp(self):
+        print(f"{self.modal}, {self.variant}, {self.color}, {self.exprise}")
+
+
+class TataMotor(Vehicle):
+    pass
+
+
+class TataMotorEV(TataMotor):
+    pass
+
+
+car1 = TataMotorEV("ez", "red", "ev max", 1500000)
+car1.exp()
